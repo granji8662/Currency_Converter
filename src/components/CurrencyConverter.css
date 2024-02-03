@@ -1,0 +1,16 @@
+.currency-converter {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .converter-input,
+  .converter-select {
+    padding: 8px;
+    margin-right: 10px;
+   
+  }
+  
+  .converter-select {
+    cursor: pointer;
+  }
+  

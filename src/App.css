@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
-}
+/* App.css */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* Use a Google Font or another preferred font */
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .app-container {
+    max-width: 350px; /* Further reduced the max-width */
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #67addb;
+    border-radius: 8px;
+    background: linear-gradient(to right, #d979c7, #4196ce);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    transition: background 0.5s ease;
+    margin-top: 70px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .app-title {
+    font-size: 24px; 
+    margin-bottom: 15px;
   }
-}
+  
+  .conversion-info {
+    
+    margin-top: 10px;
+     /* Adjusted font size for the info */
+  }
+  .small-text {
+    font-size: 12px;
+  }
+  
+  .big-text {
+    font-size: 20px;
+    margin-top: 5px;
+    font-weight: bold;
+    color: #eef0f5;
+  }
+  
+  .date-time {
+    
+    display: block;
+    margin-bottom: 7px;
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  .converter-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .converter-input,
+  .converter-select {
+    padding: 10px; /* Slightly reduced padding for input and select */
+    font-size: 14px; /* Adjusted font size for input and select */
+    width: 45%;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    outline: none;
+    transition: background 0.3s ease;
+  }
+  
+  .converter-select {
+    cursor: pointer;
+  }
+  
+  .converter-input:hover,
+  .converter-select:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
